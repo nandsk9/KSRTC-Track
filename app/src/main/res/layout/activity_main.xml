@@ -18,7 +18,8 @@
         android:layout_height="400dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteY="40dp"
+        app:mapType="normal"/>
 
     <TextView
         android:id="@+id/starting_point_view"
@@ -40,7 +41,6 @@
         android:inputType="textPersonName"
         android:text="Kanhangad"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starting_point_view" />
 
@@ -51,7 +51,6 @@
         android:layout_marginTop="4dp"
         android:text="Stopping Point"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starting_point_edit" />
@@ -65,7 +64,6 @@
         android:inputType="textPersonName"
         android:text="Kasargod"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stopping_point_view" />
     <TextView
@@ -75,7 +73,6 @@
         android:layout_marginTop="4dp"
         android:text="Bus number"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stopping_point_edit" />
@@ -89,7 +86,6 @@
         android:inputType="textPersonName"
         android:text="KL 15 A 8055"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bus_no_view" />
 
