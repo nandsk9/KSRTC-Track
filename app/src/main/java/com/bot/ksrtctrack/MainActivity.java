@@ -38,7 +38,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(ggleMap!=null){
+                    LatLng ll2 = new LatLng(12.411063099999993,75.0225179);
+                    ggleMap.animateCamera(CameraUpdateFactory.newLatLng(ll2));
+                    ggleMap.addMarker(new MarkerOptions().position(ll2).title("Thrikkanand").icon(getBitMap(MainActivity.this,R.drawable.bus_marker)));
+                }
             }
         });
         btnStop.setOnClickListener(new View.OnClickListener() {
@@ -55,9 +59,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng ll1 = new LatLng(12.3140248,75.0875445);
         ggleMap.animateCamera(CameraUpdateFactory.newLatLng(ll1));
         ggleMap.addMarker(new MarkerOptions().position(ll1).title("Kanhagad Bus Stand"));
-        LatLng ll2 = new LatLng(12.411063099999993,75.0225179);
-        ggleMap.animateCamera(CameraUpdateFactory.newLatLng(ll2));
-        ggleMap.addMarker(new MarkerOptions().position(ll2).title("Thrikkanand").icon(getBitMap(this,R.drawable.bus_marker)));
         LatLng ll3 = new LatLng(12.4999548,74.9819596);
         ggleMap.animateCamera(CameraUpdateFactory.newLatLng(ll3));
         ggleMap.addMarker(new MarkerOptions().position(ll3).title("Kasaragod Bus Stand"));
